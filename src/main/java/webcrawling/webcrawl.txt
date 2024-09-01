@@ -1,0 +1,62 @@
+package webcrawling;
+
+import org.openqa.selenium.WebElement;
+
+import java.io.*;
+
+import java.util.*;
+
+public class WebCrawler {
+
+	// finding links
+    public static List<String> find_Hyper_Links(List<WebElement> lnnks) {
+        List<String> list_URLs = new ArrayList<String>();
+        for (WebElement Elements : lnnks) {
+  
+            if (Elements.equals(null))
+                continue;
+            else {
+
+                list_URLs.add(Elements.getAttribute("href"));
+            }
+        }
+       
+        list_URLs.remove(null);
+        return (list_URLs);
+    }
+   // write date to file
+    public static void content_Write(String namefldr, String conttentt, String file_Nname, String exxttensionn) {
+        try {
+            File check_fFolderr = new File(namefldr);
+            File ff = new File(namefldr + file_Nname + exxttensionn);
+            if (!check_fFolderr.exists()) {
+               
+                boolean creattted = check_fFolderr.mkdirs(); 
+                if (creattted) {
+                  
+                    FileWriter fiWwrriter = new FileWriter(ff, false);
+                    fiWwrriter.write(conttentt);
+                    fiWwrriter.close();
+                } else {
+                    System.out.println("Failed to create the folder.");
+                }
+            } else {
+              
+                FileWriter fffwWriter = new FileWriter(ff, false);
+                fffwWriter.write(conttentt);
+                fffwWriter.close();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Error occurring in file");
+        }
+    }
+    
+    
+    public static Hashtable<String, String> createF_ile(String urrl, String cnot, String name_File,String folderrr) {
+        Hashtable<String, String> mapOfURL = new Hashtable<String, String>();
+        mapOfURL.put(name_File + ".html", urrl);
+        content_Write(folderrr, cnot, name_File, ".html");
+        return mapOfURL;
+    }
+}
