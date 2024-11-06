@@ -56,6 +56,14 @@ Validates user input against pre-set regular expression patterns to ensure data 
 ### 10. Finding Patterns using Regex
 During data operations, regex is used to identify specific data patterns, ensuring that only relevant information is extracted.
 
+## Command Line 
+
+![image](https://github.com/user-attachments/assets/c25b394c-e611-4536-b5b5-8b759f4cd75d)
+
+![image](https://github.com/user-attachments/assets/34192b3d-0031-4a63-88d9-c772c88cd7d5)
+
+![image](https://github.com/user-attachments/assets/fd6f179d-1b7b-48d4-8e76-8c5d7e41ef7c)
+
 ---
 
 This project provides a powerful tool for comparing car rental prices across platforms, helping users make well-informed decisions based on comprehensive data analysis.
