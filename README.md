@@ -5,16 +5,16 @@ The **Car Rental Price Analysis** project is designed to help users find the bes
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
-  - [Web Crawler](#web-crawler)
-  - [HTML Parser](#html-parser)
-  - [Frequency Count](#frequency-count)
-  - [Spell Checking](#spell-checking)
-  - [Search Frequency](#search-frequency)
-  - [Word Completion](#word-completion)
-  - [Inverted Indexing](#inverted-indexing)
-  - [Page Ranking](#page-ranking)
-  - [Data Validation using Regex](#data-validation-using-regex)
-  - [Finding Patterns using Regex](#finding-patterns-using-regex)
+  - [Web Crawler](#1-web-crawler)
+  - [HTML Parser](#2-html-parser)
+  - [Frequency Count](#3-frequency-count)
+  - [Spell Checking](#4-spell-checking)
+  - [Search Frequency](#5-search-frequency)
+  - [Word Completion](#6-word-completion)
+  - [Inverted Indexing](#7-inverted-indexing)
+  - [Page Ranking](#8-page-ranking)
+  - [Data Validation using Regex](#9-data-validation-using-regex)
+  - [Finding Patterns using Regex](#10-finding-patterns-using-regex)
 
 ## Introduction
 The **Car Rental Price Analysis** project explores rental car pricing trends by scraping data from the following websites:
